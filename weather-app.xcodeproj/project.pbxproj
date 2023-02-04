@@ -14,6 +14,7 @@
 		7358B4DE298E2D62000C4EE6 /* weather_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B4DD298E2D62000C4EE6 /* weather_appTests.swift */; };
 		7358B4E8298E2D62000C4EE6 /* weather_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B4E7298E2D62000C4EE6 /* weather_appUITests.swift */; };
 		7358B4EA298E2D62000C4EE6 /* weather_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7358B4E9298E2D62000C4EE6 /* weather_appUITestsLaunchTests.swift */; };
+		7358B4F9298E4D25000C4EE6 /* font in Resources */ = {isa = PBXBuildFile; fileRef = 7358B4F8298E4D25000C4EE6 /* font */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		7358B4E3298E2D62000C4EE6 /* weather-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "weather-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7358B4E7298E2D62000C4EE6 /* weather_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather_appUITests.swift; sourceTree = "<group>"; };
 		7358B4E9298E2D62000C4EE6 /* weather_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7358B4F8298E4D25000C4EE6 /* font */ = {isa = PBXFileReference; lastKnownFileType = folder; path = font; sourceTree = "<group>"; };
+		7358B4FA298E4DD3000C4EE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,7 @@
 		7358B4C0298E2D60000C4EE6 = {
 			isa = PBXGroup;
 			children = (
+				7358B4F8298E4D25000C4EE6 /* font */,
 				7358B4CB298E2D60000C4EE6 /* weather-app */,
 				7358B4DC298E2D62000C4EE6 /* weather-appTests */,
 				7358B4E6298E2D62000C4EE6 /* weather-appUITests */,
@@ -94,6 +98,7 @@
 		7358B4CB298E2D60000C4EE6 /* weather-app */ = {
 			isa = PBXGroup;
 			children = (
+				7358B4FA298E4DD3000C4EE6 /* Info.plist */,
 				7358B4CC298E2D60000C4EE6 /* weather_appApp.swift */,
 				7358B4CE298E2D60000C4EE6 /* ContentView.swift */,
 				7358B4D0298E2D62000C4EE6 /* Assets.xcassets */,
@@ -231,6 +236,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7358B4F9298E4D25000C4EE6 /* font in Resources */,
 				7358B4D4298E2D62000C4EE6 /* Preview Assets.xcassets in Resources */,
 				7358B4D1298E2D62000C4EE6 /* Assets.xcassets in Resources */,
 			);
@@ -419,6 +425,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"weather-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "weather-app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +454,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"weather-app/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "weather-app/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
