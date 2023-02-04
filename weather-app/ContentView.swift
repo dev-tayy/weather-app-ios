@@ -13,7 +13,6 @@ struct ContentView: View {
             Color("primary").ignoresSafeArea()
             Image("cloudBackground").opacity(0.07).padding([.bottom], 400)
             
-            
             VStack {
                Group {
                     Spacer().frame(height: 15)
