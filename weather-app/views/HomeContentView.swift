@@ -10,22 +10,24 @@ import SwiftUI
 struct HomeContentView: View {
     @ScaledMetric var size : CGFloat = 1
     @State private var selection : String? = nil
+    @State private var showModalSheet = false
     var body: some View {
         NavigationStack {
             VStack {
                 Group {
                     HStack (alignment: .center , spacing: 120 * size){
                         
-                        NavigationLink {
-                            SearchWeatherModal()
-                        } label: {
-                            Button (action: {}) {
-                                Text("Search for places").padding([.horizontal], 20 * size)
-                                    .padding([.vertical], 11)
-                                    .background(Color("grey"))
-                                    .foregroundColor(Color("hardWhite"))
-                                    .fontWeight(.medium)
-                            }.disabled(true)
+                        
+                        Button (action: {
+                            showModalSheet = true
+                        }) {
+                            Text("Search for places").padding([.horizontal], 20 * size)
+                                .padding([.vertical], 11)
+                                .background(Color("grey"))
+                                .foregroundColor(Color("hardWhite"))
+                                .fontWeight(.medium)
+                        }.sheet(isPresented: $showModalSheet) {
+                           SearchWeatherModal()
                         }
                         
                         
