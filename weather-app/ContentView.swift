@@ -11,7 +11,7 @@ struct ContentView: View {
     let columns = [GridItem(.fixed(150)), GridItem(.fixed(150))]
     @ScaledMetric var size : CGFloat = 1
     var body: some View {
-        NavigationView {
+        NavigationStack{
             ScrollView {
                 Spacer().frame(height: 60 * size)
                 ZStack{
