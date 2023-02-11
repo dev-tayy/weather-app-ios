@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeContentView: View {
+struct CurrentWeatherDetails: View {
     @ScaledMetric var size : CGFloat = 1
     @State private var selection : String? = nil
     @State private var showModalSheet = false
@@ -119,9 +119,9 @@ struct HomeContentView: View {
 }
 
 
-struct HomeContentView_Previews: PreviewProvider {
+struct CurrentWeatherDetails_Previews: PreviewProvider {
     static var previews: some View {
-        HomeContentView()
+        CurrentWeatherDetails()
     }
 }
 

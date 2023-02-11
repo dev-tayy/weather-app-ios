@@ -80,16 +80,11 @@ struct SearchWeatherModal: View {
                         
                         Image(systemName: "chevron.forward")
                             .foregroundColor(Color("grey"))
-                            
+                        
                     }.padding(.vertical, 23)
                         .padding(.horizontal, 14)
                         .border(Color("hardWhite"), width: 1)
                 }
-
-                
-                
-                
-                
                 
                 Spacer()
             }.padding(.horizontal, 13)
@@ -104,20 +99,3 @@ struct SearchWeatherModal_Previews: PreviewProvider {
         SearchWeatherModal()
     }
 }
-
-struct XBox: View {
-    @ScaledMetric var size : CGFloat = 1
-    var w : Double;
-    var body: some View {
-        Spacer().frame(width: w * 1)
-    }
-}
-
-struct YBox: View {
-    @ScaledMetric var size : CGFloat = 1
-    var h : Double;
-    var body: some View {
-        Spacer().frame(height: h * 1)
-    }
-}
-
